@@ -11,10 +11,41 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <title>Hello, world!</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <h1>Hello, world!</h1>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid align-items-start container mt-3">
+      <a class="navbar-brand d-flex flex-column" href="./" title="bootstrap">
+        <h1 class="fs-1 fw-bold nav-title">
+          IchsanN
+        </h1>
+        <p class="fs-6 fst-italic text-secondary">Personal Blog</p>
+      </a>
+      <div class="d-none d-sm-block">
+        <form class="d-flex align-items-center mt-2">
+          <div class="input-group">
+            <label for="search" class="input-group-text text-black-50 bg-transparent pe-0" id="basic-addon1"><i
+                class="fa-solid fa-magnifying-glass "></i></label>
+            <input type="search" id="search" class="form-control border-start-0 fst-italic" placeholder="Cari Blog Ini"
+              aria-label="Search" aria-describedby="basic-addon1">
+          </div>
+        </form>
+      </div>
+      <div class="d-block d-sm-none mt-2">
+        <div class="text-success fs-5">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
 
   <!-- Optional JavaScript; choose one of the two! -->
 
