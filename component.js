@@ -1,3 +1,21 @@
+class Post extends HTMLElement {
+  constructor() {
+    super();
+    this.setAttribute("class", "post");
+    this.innerHTML = `
+        <div class="image-post-preview">
+          <img src="./assets/image/Gambar1.png" alt="post1" class="img-fluid">
+        </div>
+        <div class="post-preview p-3">
+          <h5 class="fw-bold">UAS PKWN</h5>
+          <p class="fst-italic text-secondary">diposting oleh IchsanN Februari 17, 2022</p>
+          <div class="d-flex justify-content-between text-success"><span><i class="fa-solid fa-message"></i> 0</span> <span><i class="fa-solid fa-share"></i></span></div>
+        </div>
+    `;
+  }
+}
+customElements.define("post-component", Post);
+
 class SideNavigation extends HTMLElement {
   constructor() {
     super();
@@ -69,19 +87,19 @@ class SideNavigation extends HTMLElement {
                 data-bs-parent="#accordionLabel">
                 <div class="accordion-body">
                   <div>
-                    <div class="badge bg-primary">
+                    <div class="badge bg-success">
                       KULIAH
                     </div>
-                    <div class="badge bg-primary">
+                    <div class="badge bg-success">
                       PANCASILA
                     </div>
-                    <div class="badge bg-primary">
+                    <div class="badge bg-success">
                       PKWN
                     </div>
-                    <div class="badge bg-primary">
+                    <div class="badge bg-success">
                       UAS
                     </div>
-                    <div class="badge bg-primary">
+                    <div class="badge bg-success">
                       UTS
                     </div>
                   </div>

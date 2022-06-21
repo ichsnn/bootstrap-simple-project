@@ -1,3 +1,7 @@
+a {
+    color: var(--bs-success);
+}
+
 .nav-title {
     font-size: calc(2rem + 1.5vw)!important;
 }
@@ -39,6 +43,22 @@
     object-fit: cover;
 }
 
+.post {
+    display: block;
+}
+
 .post:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.post-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+    .post-list {
+        grid-template-columns: 1fr 1fr;
+    }
 }
