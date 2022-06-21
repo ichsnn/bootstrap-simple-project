@@ -27,3 +27,18 @@
 .accordion-body {
     padding: 0.5rem 1rem;
 }
+
+.image-post-preview {
+    height: 17.5rem;
+    overflow: hidden;
+}
+
+.image-post-preview img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+
+.post:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
